@@ -1,8 +1,9 @@
 {
   "private": true,
-  "name": "@textlint/editor-script-template",
+  "name": "my-textlint-rules",
   "version": "1.0.0",
-  "description": "@textlint/editor script template",
+  "description": "my-textlint-rules for @textlint/editor",
+  "homepage": "https://github.com/HeRoMo/my-textlint-rules",
   "scripts": {
     "website": "textlint-website-generator --outputDir dist"
   },
