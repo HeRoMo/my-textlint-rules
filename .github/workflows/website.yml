@@ -20,9 +20,9 @@ jobs:
           echo "REPO_NAME=$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')" >> $GITHUB_ENV
           echo "HOMEPAGE=$(echo "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY")" >> $GITHUB_ENV
       - name: Install
-        run: yarn install
+        run: npm install
       - name: Build
-        run: yarn website -- --metadataName="${REPO_NAME}" --metadataNamespace="${HOMEPAGE}" --metadataHomepage="${HOMEPAGE}"
+        run: npm run website -- --metadataName="${REPO_NAME}" --metadataNamespace="${HOMEPAGE}" --metadataHomepage="${HOMEPAGE}"
         env:
           OWNER_NAME: ${{ env.OWNER_NAME }}
           REPO_NAME: ${{ env.REPO_NAME }}
