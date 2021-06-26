@@ -1,8 +1,36 @@
 {
   "filters": {
-    "comments": true
+    "comments": true,
+    "allowlist": {
+      "alow": [
+        "/[①-⑩]/",
+        "/^:::details .+$/m" // for zenn.dev マークアップ
+      ]
+    }
   },
   "rules": {
-    "no-todo": true
+    "no-todo": true,
+    "preset-ja-spacing": {
+      "ja-space-between-half-and-full-width": {
+        "space": "always"
+      },
+      "ja-space-around-code": {
+        "before": true,
+        "after": true
+      }
+    },
+    "preset-ja-technical-writing": {
+      "ja-no-weak-phrase": false,
+      "no-exclamation-question-mark": false,
+      "no-doubled-joshi": {
+        "min_interval": 2, // 助詞のtoken同士の距離が2以下ならエラー
+        "strict": false, // 例外を許可するかどうか
+        "allow": ["も","や","は","に","が","か","と","で","たり"], // 助詞のうち「も」「や」は複数回の出現を許す
+        "separatorChars": ["。","?","!","？","！"]
+      }
+    },
+    "date-weekday-mismatch": true,
+    "spellcheck-tech-word": true,
+    "@textlint-rule/no-invalid-control-character": true
   }
 }
