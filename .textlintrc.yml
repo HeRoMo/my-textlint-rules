@@ -1,0 +1,28 @@
+filters:
+  comments: true
+  allowlist:
+    allowlistConfigPaths:
+      - './allow.yml'
+rules:
+  # no-todo: true
+  preset-ja-spacing:
+    ja-space-between-half-and-full-width:
+      space: always
+    ja-space-around-code:
+      before: true
+      after: true
+  preset-ja-technical-writing:
+    ja-no-weak-phrase: false
+    no-exclamation-question-mark: false
+    no-doubled-joshi:
+      # 助詞のtoken同士の距離が2以下ならエラー
+      min_interval: 2
+      # 例外を許可するかどうか
+      strict: false
+      # 助詞のうち「も」「や」は複数回の出現を許す
+      allow: [も, や, は , に, が, か, と, で, たり]
+      # 文区切り文字の配列
+      separatorChars: ['。', '?', '!', '？', '！']
+  date-weekday-mismatch: true
+  spellcheck-tech-word: true
+  '@textlint-rule/no-invalid-control-character': true

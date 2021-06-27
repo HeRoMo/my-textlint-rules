@@ -21,8 +21,10 @@ jobs:
           echo "HOMEPAGE=$(echo "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY")" >> $GITHUB_ENV
       - name: Install
         run: yarn install
+      - name: Convert YAML to JSON
+        run: yarn yml2json
       - name: Build
-        run: yarn website -- --metadataName="${REPO_NAME}" --metadataNamespace="${HOMEPAGE}" --metadataHomepage="${HOMEPAGE}"
+        run: yarn website -- --metadataName="${REPO_NAME}" --metadataNamespace="${HOMEPAGE}" --metadataHomepage="${HOMEPAGE}" --textlintrc .textlintrc.json
         env:
           OWNER_NAME: ${{ env.OWNER_NAME }}
           REPO_NAME: ${{ env.REPO_NAME }}
