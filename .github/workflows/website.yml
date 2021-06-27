@@ -24,7 +24,7 @@ jobs:
       - name: Convert YAML to JSON
         run: yarn yml2json
       - name: Build
-        run: yarn website -- --metadataName="${REPO_NAME}" --metadataNamespace="${HOMEPAGE}" --metadataHomepage="${HOMEPAGE}" --textlintrc .textlintrc.json --title heromo-textlint-rules
+        run: yarn website -- --metadataName="${REPO_NAME}" --metadataNamespace="${HOMEPAGE}" --metadataHomepage="${HOMEPAGE}" --textlintrc .textlintrc.json --metadataName heromo-textlint-rules
         env:
           OWNER_NAME: ${{ env.OWNER_NAME }}
           REPO_NAME: ${{ env.REPO_NAME }}
