@@ -1,8 +1,11 @@
 filters:
   comments: true
   allowlist:
-    allowlistConfigPaths:
-      - './allow.yml'
+    allow:
+      - /[①-⑩]/
+      - /[0-9]{4}年[0-9]{1,2}月[0-9]{1,2}日/
+      # for zenn.dev マークアップ
+      - /^:::details .+$/m`
 rules:
   no-todo: true
   preset-ja-spacing:

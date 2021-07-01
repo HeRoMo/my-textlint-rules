@@ -5,8 +5,7 @@
   "description": "my-textlint-rules for @textlint/editor",
   "homepage": "https://github.com/HeRoMo/my-textlint-rules",
   "scripts": {
-    "website": "textlint-website-generator --outputDir dist",
-    "yml2json": "node ./scripts/convert-yml-to-json.js"
+    "website": "textlint-website-generator --outputDir dist"
   },
   "devDependencies": {
     "@textlint/website-generator": "^0.12.1",
@@ -14,7 +13,7 @@
   },
   "dependencies": {
     "textlint": "^12.0.0",
-    "textlint-filter-rule-allowlist": "^3.0.0",
+    "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-date-weekday-mismatch": "^1.0.5",
     "textlint-rule-no-todo": "^2.0.1",

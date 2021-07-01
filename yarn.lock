@@ -2106,7 +2106,7 @@ js-yaml@^3.12.0, js-yaml@^3.14.1, js-yaml@^3.9.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-js-yaml@^4.0.0:
+js-yaml@^4.0.0, js-yaml@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
   integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
@@ -3619,15 +3619,15 @@ textchecker-element@^0.12.1:
     text-caret-pos "^1.0.1"
     to-px "^1.1.0"
 
-textlint-filter-rule-allowlist@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/textlint-filter-rule-allowlist/-/textlint-filter-rule-allowlist-3.0.0.tgz#1302038b1f9549f59621636daa20401ae5f2f2c5"
-  integrity sha512-kOsPFQ+lU+kEEseB3PHatqlPfMcu7EpVJByEMcqW9/imKJ+QgBM0q7Jh09Viyie6cX1OrUQeAbgcDhk5XKwr6A==
+textlint-filter-rule-allowlist@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/textlint-filter-rule-allowlist/-/textlint-filter-rule-allowlist-4.0.0.tgz#44b62a3bf7f0586daeca6d14c2c6332b164cc6af"
+  integrity sha512-rOlWr12sff9ZS8mOtRACPB3l1yK0oW21Owz8XsTAgFWmRhOnBbCKw8tKMDm6EtQHO92SOfyJmT4nowxiJ85Qiw==
   dependencies:
     "@textlint/ast-node-types" "^12.0.0"
     "@textlint/get-config-base-dir" "^2.0.0"
     "@textlint/regexp-string-matcher" "^1.1.0"
-    rc-config-loader "^4.0.0"
+    js-yaml "^4.1.0"
 
 textlint-filter-rule-comments@^1.2.2:
   version "1.2.2"
