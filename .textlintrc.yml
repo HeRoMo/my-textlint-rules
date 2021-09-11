@@ -26,6 +26,8 @@ rules:
       allow: [も, や, は , に, が, か, と, で, たり]
       # 文区切り文字の配列
       separatorChars: ['。', '?', '!', '？', '！']
+    sentence-length:
+      max: 150
   date-weekday-mismatch: true
   spellcheck-tech-word: true
   '@textlint-rule/no-invalid-control-character': true
