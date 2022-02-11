@@ -16,6 +16,10 @@ rules:
       after: true
   preset-ja-technical-writing:
     ja-no-weak-phrase: false
+    ja-no-successive-word:
+      allowOnomatopee: true
+      allow: 
+        - まあ
     no-exclamation-question-mark: false
     no-doubled-joshi:
       # 助詞のtoken同士の距離が2以下ならエラー
