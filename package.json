@@ -8,7 +8,7 @@
     "website": "textlint-website-generator --outputDir dist"
   },
   "devDependencies": {
-    "@textlint/website-generator": "^0.17.0"
+    "@textlint/website-generator": "^0.18.0"
   },
   "dependencies": {
     "textlint": "^15.0.0",
